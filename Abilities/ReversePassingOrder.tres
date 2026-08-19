@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Ability" format=3 uid="uid://40tt8onchnst"]
+
+[ext_resource type="Script" uid="uid://2hgk6e1t2iwk" path="res://Script/AbilitiesResource.gd" id="1_vuhhe"]
+
+[resource]
+script = ExtResource("1_vuhhe")
+abilityName = "Reversed Passing Order"
+metadata/_custom_type_script = "uid://2hgk6e1t2iwk"

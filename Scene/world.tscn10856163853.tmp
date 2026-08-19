@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://b6re4u1xt1q2q"]
+
+[ext_resource type="Script" uid="uid://bir4u34ojnf5y" path="res://Script/Main.gd" id="1_emx41"]
+[ext_resource type="Resource" uid="uid://cuifg2x4ckv8h" path="res://Levels/Level 1/Bomb1.tres" id="2_pcvp0"]
+[ext_resource type="Script" uid="uid://byqe003ls4mmm" path="res://Script/Player.gd" id="2_scul4"]
+[ext_resource type="Resource" uid="uid://bdldnik2cr7y7" path="res://Levels/Player.tres" id="3_pcvp0"]
+[ext_resource type="Resource" uid="uid://d1g1irhsovv2e" path="res://Levels/Level 1/NPC1.tres" id="4_37axr"]
+
+[node name="World" type="Control" unique_id=2048722786]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_emx41")
+bomb = ExtResource("2_pcvp0")
+players = Array[ExtResource("2_scul4")]([ExtResource("3_pcvp0"), ExtResource("4_37axr")])
+
+[node name="PassTheBomb" type="Button" parent="." unique_id=212041055]
+layout_mode = 0
+offset_left = 481.0
+offset_top = 515.0
+offset_right = 605.0
+offset_bottom = 572.0
+text = "Pass the Bomb
+"
+
+[node name="MessageLabel" type="Label" parent="." unique_id=406790320]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 38.0
+offset_right = 672.0
+offset_bottom = 203.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BombTicksLabel" type="Label" parent="." unique_id=2106828837]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="pressed" from="PassTheBomb" to="." method="_on_pass_the_bomb_pressed"]

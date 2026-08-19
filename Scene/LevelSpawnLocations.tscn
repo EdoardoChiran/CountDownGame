@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://drid1yuia7q83"]
+
+[ext_resource type="Script" uid="uid://u0516le7q7mp" path="res://Script/SpawnPointGenerator.gd" id="1_kpob1"]
+
+[node name="LevelSpawnLocations" type="Node2D" unique_id=1206473963]
+position = Vector2(573, 426)
+script = ExtResource("1_kpob1")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1928569590]

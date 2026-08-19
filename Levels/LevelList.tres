@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="LevelList" format=3 uid="uid://brx0p4nvg5skm"]
+
+[ext_resource type="Script" uid="uid://bv3v4dghgrtnc" path="res://Script/LevelList.gd" id="1_b6obk"]
+[ext_resource type="Script" uid="uid://deo4as7205urt" path="res://Script/Levels.gd" id="1_u4acf"]
+[ext_resource type="Resource" uid="uid://d0tnv7wb7qri0" path="res://Levels/Level 1/Level1.tres" id="2_nrdpe"]
+[ext_resource type="Resource" uid="uid://e7u21y4c22tp" path="res://Levels/Level 2/Level2.tres" id="3_dvae6"]
+[ext_resource type="Resource" uid="uid://df10h75qdwjnd" path="res://Levels/Level 3/Level3.tres" id="4_em2r6"]
+[ext_resource type="Resource" uid="uid://dnrimegthwdqr" path="res://Levels/Level 4/Level4.tres" id="5_nrdpe"]
+[ext_resource type="Resource" uid="uid://21u68ydyol15" path="res://Levels/Level 5/Level5.tres" id="6_dvae6"]
+
+[resource]
+script = ExtResource("1_b6obk")
+levelList = Array[ExtResource("1_u4acf")]([ExtResource("2_nrdpe"), ExtResource("3_dvae6"), ExtResource("4_em2r6"), ExtResource("5_nrdpe"), ExtResource("6_dvae6")])
+metadata/_custom_type_script = "uid://bv3v4dghgrtnc"

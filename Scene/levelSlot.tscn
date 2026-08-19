@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://div2koutxas7r"]
+
+[ext_resource type="Script" uid="uid://cfi7pdj4518sl" path="res://Script/LevelSlot.gd" id="1_kn0t3"]
+
+[node name="LevelSlot" type="Control" unique_id=1812561019]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 22.0
+offset_top = -20.0
+offset_right = 22.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kn0t3")
+
+[node name="LevelSelector" type="Button" parent="." unique_id=448572159]
+custom_minimum_size = Vector2(60, 40)
+custom_maximum_size = Vector2(60, 40)
+layout_mode = 1
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="LevelLabel" type="Label" parent="LevelSelector" unique_id=1818649580]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="LevelSelector" to="." method="_on_level_selector_pressed"]

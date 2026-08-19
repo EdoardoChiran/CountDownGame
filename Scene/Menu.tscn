@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bytrqk2lu66gj"]
+
+[ext_resource type="Script" uid="uid://dys12obu1pe7n" path="res://Script/menu.gd" id="1_dvvdh"]
+
+[node name="Menu" type="Control" unique_id=821007765]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dvvdh")
+
+[node name="Level Selector" type="Button" parent="." unique_id=1711176292]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -44.5
+offset_right = 59.0
+offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Level Selector"
+
+[connection signal="pressed" from="Level Selector" to="." method="_on_level_selector_pressed"]

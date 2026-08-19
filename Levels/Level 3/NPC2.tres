@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Players" format=3 uid="uid://dofrgw632qjcf"]
+
+[ext_resource type="Script" uid="uid://byqe003ls4mmm" path="res://Script/Player.gd" id="1_i3rn2"]
+
+[resource]
+script = ExtResource("1_i3rn2")
+isPlayerBot = true
+playerName = "culo 3"
+metadata/_custom_type_script = "uid://byqe003ls4mmm"

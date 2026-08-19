@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Ability" format=3 uid="uid://b6fg5dhrd3hkq"]
+
+[ext_resource type="Script" uid="uid://2hgk6e1t2iwk" path="res://Script/AbilitiesResource.gd" id="1_5sjom"]
+
+[resource]
+script = ExtResource("1_5sjom")
+abilityName = "Bomb Skip Player"
+metadata/_custom_type_script = "uid://2hgk6e1t2iwk"

@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://b6re4u1xt1q2q"]
+
+[ext_resource type="Script" uid="uid://bir4u34ojnf5y" path="res://Script/Main.gd" id="1_emx41"]
+[ext_resource type="Resource" uid="uid://brx0p4nvg5skm" path="res://Levels/LevelList.tres" id="2_cnsa7"]
+[ext_resource type="Script" uid="uid://2hgk6e1t2iwk" path="res://Script/AbilitiesResource.gd" id="3_j0m1p"]
+[ext_resource type="Resource" uid="uid://b6fg5dhrd3hkq" path="res://Abilities/BombSkipPlayer.tres" id="4_6i788"]
+[ext_resource type="Resource" uid="uid://40tt8onchnst" path="res://Abilities/ReversePassingOrder.tres" id="5_6i788"]
+[ext_resource type="PackedScene" uid="uid://cgdm4ujxl4m5n" path="res://Scene/AbilitiesContainer.tscn" id="6_6i788"]
+
+[node name="Level" type="Control" unique_id=2048722786]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_emx41")
+level = ExtResource("2_cnsa7")
+abilities = Array[ExtResource("3_j0m1p")]([ExtResource("4_6i788"), ExtResource("5_6i788")])
+
+[node name="MessageLabel" type="Label" parent="." unique_id=406790320]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -112.0
+offset_right = 112.0
+offset_bottom = 165.0
+grow_horizontal = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BombTicksLabel" type="Label" parent="." unique_id=2106828837]
+layout_mode = 1
+offset_right = 202.0
+offset_bottom = 283.0
+
+[node name="BackToMenu" type="Button" parent="." unique_id=1894057216]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -169.0
+offset_bottom = 80.0
+grow_horizontal = 0
+text = "Back To Menu"
+
+[node name="AbilityContainer" parent="." unique_id=220156692 instance=ExtResource("6_6i788")]
+custom_maximum_size = Vector2(190, -1)
+layout_mode = 1
+offset_right = 222.0
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=2073668800]
+layout_mode = 0
+offset_left = 974.0
+offset_top = 461.0
+offset_right = 1109.0
+offset_bottom = 577.0
+
+[connection signal="pressed" from="BackToMenu" to="." method="_on_back_to_menu_pressed"]
+[connection signal="bombReverseOrder" from="AbilityContainer" to="." method="_on_grid_container_bomb_reverse_order"]
+[connection signal="bombSkipHeld" from="AbilityContainer" to="." method="_on_grid_container_bomb_skip_held"]

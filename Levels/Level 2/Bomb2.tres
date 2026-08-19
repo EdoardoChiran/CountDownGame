@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Bomb" format=3 uid="uid://s2ke66vh6qll"]
+
+[ext_resource type="Script" uid="uid://dlqfodx00wltu" path="res://Script/Bomb.gd" id="1_dvtk1"]
+
+[resource]
+script = ExtResource("1_dvtk1")
+tickingTurns = 5
+metadata/_custom_type_script = "uid://dlqfodx00wltu"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Levels" format=3 uid="uid://d0tnv7wb7qri0"]
+
+[ext_resource type="Script" uid="uid://byqe003ls4mmm" path="res://Script/Player.gd" id="1_6mq68"]
+[ext_resource type="Resource" uid="uid://cuifg2x4ckv8h" path="res://Levels/Level 1/Bomb1.tres" id="1_vrqjx"]
+[ext_resource type="Script" uid="uid://deo4as7205urt" path="res://Script/Levels.gd" id="2_gaspe"]
+[ext_resource type="Resource" uid="uid://bdldnik2cr7y7" path="res://Levels/Player.tres" id="3_hd2pm"]
+[ext_resource type="Resource" uid="uid://d1g1irhsovv2e" path="res://Levels/Level 1/NPC1.tres" id="4_iqi36"]
+
+[resource]
+script = ExtResource("2_gaspe")
+playerList = Array[ExtResource("1_6mq68")]([ExtResource("3_hd2pm"), ExtResource("4_iqi36")])
+bombType = ExtResource("1_vrqjx")
+levelName = "Tutorial"
+levelNumber = 1
+metadata/_custom_type_script = "uid://deo4as7205urt"

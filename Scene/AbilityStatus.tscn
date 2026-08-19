@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bmbpev0cvpdu6"]
+
+[ext_resource type="Script" uid="uid://iqemo1vbx1ct" path="res://Script/AbilityStatus.gd" id="1_gjq8k"]
+
+[node name="AbilityStatus" type="ColorRect" unique_id=259528914]
+custom_minimum_size = Vector2(190, 40)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+color = Color(0.24705882, 1, 0, 1)
+script = ExtResource("1_gjq8k")
+
+[node name="AbilityLabel" type="Label" parent="." unique_id=404541918]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Culo"
+horizontal_alignment = 1
+vertical_alignment = 1

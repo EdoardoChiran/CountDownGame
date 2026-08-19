@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Levels" format=3 uid="uid://df10h75qdwjnd"]
+
+[ext_resource type="Script" uid="uid://byqe003ls4mmm" path="res://Script/Player.gd" id="1_4thr1"]
+[ext_resource type="Resource" uid="uid://44m20uotcale" path="res://Levels/Level 3/Bomb3.tres" id="1_j4ln8"]
+[ext_resource type="Script" uid="uid://deo4as7205urt" path="res://Script/Levels.gd" id="2_py3df"]
+[ext_resource type="Resource" uid="uid://bdldnik2cr7y7" path="res://Levels/Player.tres" id="3_nujjk"]
+[ext_resource type="Resource" uid="uid://choxahfgm4k" path="res://Levels/Level 3/NPC1.tres" id="4_qityv"]
+[ext_resource type="Resource" uid="uid://dofrgw632qjcf" path="res://Levels/Level 3/NPC2.tres" id="5_l75ll"]
+
+[resource]
+script = ExtResource("2_py3df")
+playerList = Array[ExtResource("1_4thr1")]([ExtResource("3_nujjk"), ExtResource("4_qityv"), ExtResource("5_l75ll")])
+bombType = ExtResource("1_j4ln8")
+levelName = "Level 2"
+levelNumber = 3
+metadata/_custom_type_script = "uid://deo4as7205urt"
